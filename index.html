@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UIU Helpline</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAh1BMVEXvZQrsZAztYg3zZhTwXw73ZBT1YBDraRXcayXXayrhaCPZZiX3Ywv/9NH/89j/7b//+Nz/8eD/+e+0b0i3eEz/9uP8//bMcTz/9uH//v/8/f/SaivVbinccjT/99//9N7SaSjbcCzVbTDUcTr/7cb9sIbAcD29d0Ppt5T/7Lj/7LDmYRLfZxmxvZeHAAAAsUlEQVR4AU2LhbEDMQwFV5IhzFBE0n9Fn5nRPsVzQ1kxPAHpwXtQciMls5RyA51YbGjOGhs2CXg4kxT0h0Awsxat4ScIJQQpAtG7gmu3yUMhu2dkmDeuWAJ+eycZKtJqqiI1JZBOyz9/8Pvz80tr/lGQKreyWrVUBRS+qk72ZvuJ1l/Q+Eh+Xz7B0/I918eo7vP0dbk1215+pbk7dhgNx+PR8TgaD4ejg6EQQ1QRbQX0BCu4QGDNqiKOAAAAAElFTkSuQmCC" type="image/x-icon">
+    <!-- Daisy UI -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Addmission</a></li>
+              <li><a>Academic</a></li>
+              <li><a>Research</a></li>
+              <li><a>Clubs</a></li>
+              <li><a>Faculty</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl font-extrabold text-orange-400"
+            >UIU Help Line</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-xl">Addmission</a></li>
+            <li><a class="text-xl">Academic</a></li>
+            <li><a class="text-xl">Research</a></li>
+            <li><a class="text-xl">Clubs</a></li>
+            <li><a class="text-xl">Faculty</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="bg-orange-400 text-white text-xl font-semibold text-white p-4 rounded-xl hover:bg-gray-200 hover:text-orange-500 hover:font-extrabold">Ask Forum</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="flex flex-col items-center justify- p-10 border gap-4">
+        <h1 class="text-3xl text-center font-semibold">Ask anything</h1>
+        <label class="input input-bordered flex items-center gap-2">
+          <input type="text" class="grow" placeholder="Search" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            class="w-4 h-4 opacity-70"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </label>
+      </section>
+
+      <section class="p-5">
+        <h1 class="text-3xl text-center font-semibold">Most asked questions</h1>
+      </section>
+
+      <section class="p-10 bg-gray-300 flex flex-col gap-2">
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            How many programs UIU offer for Undergraduate degree?
+          </div>
+          <div class="collapse-content">
+            <p>
+              There are 9 number of Program: BBA, BBA in AIS, BSECO, BSCSE,
+              BSEEE, BSCE, BSSEDS, MSJ, English.
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How many trimester in a year?
+          </div>
+          <div class="collapse-content">
+            <p>
+              UIU offers 3 trimesters in a year: Spring, Summer & Fall. In
+              general, these trimesters start in February, June & October
+              respectively.
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            From where I can collect the admission form?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Admission Form is available at UIU Admission Office on working
+              days between 9:00 AM to 4:00 PM. on payment of Tk. 1000/= (Non
+              Refundable). Also, Admission Form can be purchased and submit via
+              online at admission.uiu.ac.bd
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+        <nav>
+          <h6 class="footer-title">UIU Help Line</h6> 
+          <a class="link link-hover">Why UIU</a>
+          <a class="link link-hover">Vision Mission Goals
+        </a>
+          <a class="link link-hover">General Information</a>
+          <a class="link link-hover">UIU Campus</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Departments</h6> 
+          <a class="link link-hover">Dept. of CSE</a>
+          <a class="link link-hover">Dept. of EEE</a>
+          <a class="link link-hover">Dept. of Civil Engineering</a>
+          <a class="link link-hover">Dept. of Pharmacy</a>
+          <a class="link link-hover">Dept. of English</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Quick Links</h6> 
+          <a class="link link-hover">Student Portal</a>
+          <a class="link link-hover">Parent Portal</a>
+          <a class="link link-hover">Online Classroom Booking</a>
+          <a class="link link-hover">Events</a>
+    
+        </nav>
+      </footer>
+  </body>
+</html>
