@@ -57,6 +57,13 @@
               <li><a>Research</a></li>
               <li><a>Clubs</a></li>
               <li><a>Faculty</a></li>
+              <li>
+                <a
+                  class="bg-orange-400 text-white text-md font-semibold text-white p-1 flex gap-2 items-center rounded-xl hover:bg-gray-200 hover:text-orange-500 hover:font-extrabold lg:flex"
+                  ><i class="fa-solid fa-arrow-right-from-bracket"></i> Log
+                  Out</a
+                >
+              </li>
             </ul>
           </div>
           <a class="btn btn-ghost text-3xl font-extrabold text-orange-400"
@@ -72,9 +79,10 @@
             <li><a class="text-xl">Faculty</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
+        <div class="hidden lg:flex lg:navbar-end">
+          <!-- Hidden on small devices, visible on large devices -->
           <a
-            class="bg-orange-400 text-white text-xl font-semibold text-white p-4 rounded-xl hover:bg-gray-200 hover:text-orange-500 hover:font-extrabold"
+            class="bg-orange-400 text-white text-md font-semibold text-white p-2 flex gap-2 items-center rounded-xl hover:bg-gray-200 hover:text-orange-500 hover:font-extrabold lg:flex"
             ><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</a
           >
         </div>
@@ -84,39 +92,40 @@
     <!-- Main section -->
     <main class="flex border-2 border-blue-400">
       <!-- Sidebar -->
-      <section class="border-2 m-1 border-green-400">
-        
-
+      <section class="border-2 m-1 border-green-400 dark:bg-gray-800">
         <aside
           id="default-sidebar"
-          class="w-60 rounded-lg h-screen"
+          class="lg:w-60 w-[60px] rounded-lg h-screen"
           aria-label="Sidebar"
         >
           <div
-            class="flex flex-col h-full px-3 py-4 border-red-500 rounded-lg overflow-y-auto bg-gray-50 dark:bg-gray-800"
+            class="flex flex-col w-full h-full px-3 py-4 border-red-500 rounded-lg overflow-y-auto"
           >
             <ul class="space-y-2 font-medium">
-
               <!-- Dashboard -->
               <li>
                 <a
-                  href="#"
-                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                  href="./main.html"
+                  class="flex border border-indigo-300 items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
                   <!-- Dashboard SVG -->
                   <i class="fa-solid fa-table-columns"></i>
-                  <span class="ms-3">Dashboard</span>
+                  <span class="ms-3"
+                    ><p class="hidden lg:flex">Dashboard</p></span
+                  >
                 </a>
               </li>
 
               <!-- Forum -->
               <li>
                 <a
-                  href="#"
+                  href="./forum.html"
                   class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
                   <i class="fa-regular fa-id-card"></i>
-                  <span class="flex-1 ms-3 whitespace-nowrap">Forum</span>
+                  <span class="flex-1 ms-3 whitespace-nowrap"
+                    ><p class="hidden lg:flex">Forum</p></span
+                  >
                 </a>
               </li>
 
@@ -127,7 +136,9 @@
                   class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
                   <i class="fa-regular fa-comment-dots"></i>
-                  <span class="flex-1 ms-3 whitespace-nowrap">Messages</span>
+                  <span class="flex-1 ms-3 whitespace-nowrap"
+                    ><p class="hidden lg:flex">Messages</p></span
+                  >
                   <span
                     class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300"
                     >3</span
@@ -143,7 +154,7 @@
                 >
                   <i class="fa-regular fa-pen-to-square"></i>
                   <span class="flex-1 ms-3 whitespace-nowrap"
-                    >Share Experiences</span
+                    ><p class="hidden lg:flex">Share Experiences</p></span
                   >
                 </a>
               </li>
@@ -151,52 +162,231 @@
               <!-- Buy & Sell -->
               <li>
                 <a
-                  href="#"
+                  href="./buynsell.html"
                   class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
                   <i class="fa-solid fa-store"></i>
-                  <span class="flex-1 ms-3 whitespace-nowrap">Buy & Sell</span>
+                  <span class="flex-1 ms-3 whitespace-nowrap"
+                    ><p class="hidden lg:flex">Buy & Sell</p></span
+                  >
                 </a>
               </li>
-
-              
             </ul>
             <div>
               <!-- Profile -->
-                <a
-                  href="#"
-                  class="flex border border-indigo-300 items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              <a
+                href="#"
+                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <i class="fa-regular fa-user"></i>
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  ><p class="hidden lg:flex">Profile</p></span
                 >
-                  <i class="fa-regular fa-user"></i>
-                  <span class="flex-1 ms-3 whitespace-nowrap">Profile</span>
-                </a> 
+              </a>
             </div>
           </div>
         </aside>
-
       </section>
 
       <!-- Main Box -->
-      <section class=" border border-blue-500 m-5">
-        <div class="carousel w-full">
-          <div id="item1" class="carousel-item w-full">
-            <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-          </div> 
-          <div id="item2" class="carousel-item w-full">
-            <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-          </div> 
-          <div id="item3" class="carousel-item w-full">
-            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-          </div> 
-          <div id="item4" class="carousel-item w-full">
-            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+      <section class="flex flex-col border border-blue-500 m-1 p-1 lg:p-5">
+        <!-- Slider section -->
+        <div class="lg:p-5 ">
+          <div class="carousel w-full  max-h-[400px]">
+            <div id="item1" class="carousel-item w-full">
+              <img
+                src="https://www.uiu.ac.bd/wp-content/uploads/2023/12/9U-9.jpg"
+                class="w-full"
+              />
+            </div>
+            <div id="item2" class="carousel-item w-full">
+              <img
+                src="https://www.uiu.ac.bd/wp-content/uploads/2023/12/2U-2-scaled.jpg"
+                class="w-full"
+              />
+            </div>
+            <div id="item3" class="carousel-item w-full">
+              <img
+                src="https://cse.uiu.ac.bd/wp-content/uploads/sites/3/2023/12/6U-6.jpg"
+                class="w-full"
+              />
+            </div>
+            <div id="item4" class="carousel-item w-full">
+              <img
+                src="https://unitedrealestatebd.com/wp-content/uploads/2020/07/UIU-Campus0-768x575-1.jpg"
+                class="w-full"
+              />
+            </div>
           </div>
-        </div> 
-        <div class="flex justify-center w-full py-2 gap-2">
-          <a href="#item1" class="btn btn-xs">1</a> 
-          <a href="#item2" class="btn btn-xs">2</a> 
-          <a href="#item3" class="btn btn-xs">3</a> 
-          <a href="#item4" class="btn btn-xs">4</a>
+          <div class="flex justify-center w-full py-2 gap-2">
+            <a href="#item1" class="btn btn-xs">1</a>
+            <a href="#item2" class="btn btn-xs">2</a>
+            <a href="#item3" class="btn btn-xs">3</a>
+            <a href="#item4" class="btn btn-xs">4</a>
+          </div>
+        </div>
+
+        <!-- QNA section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+          <!-- 1st section of QNA -->
+          <div
+            class="flex flex-col bg-blue-100 p-1 lg:p-5 gap-2 rounded-lg shadow-xl"
+          >
+            <h1
+              class="text-center text-xl lg:text-3xl text-normal text-orange-400 p-2"
+            >
+              Addmission
+            </h1>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <!-- Question here -->
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <!-- Answer here -->
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd Section of QNA -->
+          <div
+            class="flex flex-col bg-blue-100 p-1 lg:p-5 gap-2 rounded-lg shadow-xl"
+          >
+            <h1
+              class="text-center text-xl lg:text-3xl text-normal text-orange-400 p-2"
+            >
+              Addmission
+            </h1>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <!-- Question here -->
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <!-- Answer here -->
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd section of QNA -->
+          <div
+            class="flex flex-col bg-blue-100 p-1 lg:p-5 gap-2 rounded-lg shadow-xl"
+          >
+            <h1
+              class="text-center text-xl lg:text-3xl text-normal text-orange-400 p-2"
+            >
+              Addmission
+            </h1>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <!-- Question here -->
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <!-- Answer here -->
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4th section of QNA -->
+          <div
+            class="flex flex-col bg-blue-100 p-1 lg:p-5 gap-2 rounded-lg shadow-xl"
+          >
+            <h1
+              class="text-center text-xl lg:text-3xl text-normal text-orange-400 p-2"
+            >
+              Addmission
+            </h1>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <!-- Question here -->
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <!-- Answer here -->
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
